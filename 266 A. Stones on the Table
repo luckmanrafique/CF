@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+using namespace std;
+using ll= long long int;
+void tomarAbbu()
+{
+    int n;
+    string s;
+    int pops=0;
+    cin>>n>>s;
+    for(int i=1;i<s.length();i++){
+        if(s[i]==s[i-1]) pops++;
+    }
+    cout<<pops<<endl;
+}
+int main()
+{
+    tomarAbbu();
+    return 0;
+}
